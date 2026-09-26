@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vireo Audio weekly customer-support digest and repeat-contact dashboard." />
+    <title>Vireo Support Weekly Digest</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b6b67'/%3E%3Cpath d='M16 18l16 31 16-31h-9L32 34l-7-16z' fill='white'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#overview" aria-label="Vireo Support home">
+          <span class="brand-mark">V</span>
+          <span><strong>Vireo</strong><small>Support intelligence</small></span>
+        </a>
+        <nav class="tabs" aria-label="Dashboard views">
+          <button class="tab is-active" data-view="overview">Weekly Digest</button>
+          <button class="tab" data-view="leaderboard">Agent Leaderboard</button>
+          <button class="tab" data-view="opportunities">Support Opportunities</button>
+        </nav>
+        <div class="data-status"><span></span> Saved data</div>
+      </header>
+
+      <main>
+        <section class="view is-active" id="overview" aria-labelledby="overview-title">
+          <div class="page-heading">
+            <div>
+              <p class="eyebrow">Customer experience operations</p>
+              <h1 id="overview-title">Vireo Support Weekly Digest</h1>
+              <p class="subtitle" id="reporting-period"></p>
+            </div>
+            <label class="week-control">Week starting
+              <select id="digest-week-select" aria-label="Choose digest week"></select>
+            </label>
+          </div>
+
+          <div class="kpi-grid" id="overview-kpis"></div>
+
+          <article class="panel issues-panel">
+            <div class="panel-heading issues-heading">
+              <div>
+                <p class="eyebrow">Selected week</p>
+                <h2>Customer issues this week</h2>
+              </div>
+            </div>
+            <p class="issue-summary" id="issue-summary"></p>
+            <div class="issue-list-header" aria-hidden="true"><span>Issue / theme</span><span>Tickets</span><span>% of new tickets</span></div>
+            <div class="issue-list" id="weekly-issue-list"></div>
+          </article>
+
+          <div class="overview-grid">
+            <article class="panel chart-panel">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">Complaint movement</p>
+                  <h2>Top complaint themes &mdash; 8-week trend</h2>
+                </div>
+                <div class="legend" id="trend-legend"></div>
+              </div>
+              <div class="trend-chart" id="trend-chart" role="img" aria-label="Weekly complaint trend"></div>
+            </article>
+
+            <article class="panel changes-panel">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">Weekly readout</p>
+                  <h2>What changed this week?</h2>
+                </div>
+              </div>
+              <ol class="insight-list" id="weekly-insights"></ol>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="opportunities" aria-labelledby="repeat-title">
+          <div class="page-heading compact-heading">
+            <div>
+              <p class="eyebrow">Main opportunity</p>
+              <h1 id="repeat-title">Support Opportunities</h1>
+              <p class="subtitle">A conservative, reviewed view of contacts that returned for the same issue.</p>
+            </div>
+          </div>
+
+          <article class="opportunity-card">
+            <div class="opportunity-copy">
+              <p class="eyebrow light">13-week pilot focus</p>
+              <h2>Missing-delivery / tracking cases have a <strong>14.34%</strong> repeat-contact rate among mature tickets.</h2>
+              <p>Keep delivery cases open or actively followed up until delivery, reshipment, or refund is confirmed.</p>
+            </div>
+            <div class="target-block">
+              <span>Pilot target</span>
+              <strong>14.34% <i>→</i> 10.76%</strong>
+              <small>25% relative reduction</small>
+            </div>
+            <div class="impact-block">
+              <div><strong>≈37</strong><span>potentially avoided repeat contacts / quarter</span></div>
+              <div><strong>≈₹9,350</strong><span>quarterly support-capacity value</span></div>
+            </div>
+            <p class="capacity-note">Support-capacity value, not guaranteed cash savings.</p>
+          </article>
+
+          <div class="repeat-grid">
+            <article class="panel category-panel">
+              <div class="panel-heading">
+                <div>
+                  <p class="eyebrow">High-confidence repeat contacts</p>
+                  <h2>Largest issue categories</h2>
+                </div>
+                <span class="metric-note">Contacts &middot; historical capacity</span>
+              </div>
+              <div class="ranked-bars" id="repeat-categories"></div>
+            </article>
+
+            <div class="side-stack">
+              <article class="panel recommendation-card">
+                <p class="eyebrow">Recommended intervention</p>
+                <h2>Close after the customer outcome is confirmed</h2>
+                <p>Keep missing-delivery and stalled-tracking cases open or followed up until delivery, reshipment, or refund is confirmed&mdash;not merely initiated.</p>
+              </article>
+              <article class="panel reliability-card">
+                <p class="eyebrow">How reliable is this?</p>
+                <p><strong>67/67 reviewed high-confidence cases agreed;</strong> ambiguous cases were excluded from the headline estimate.</p>
+                <details class="method-details">
+                  <summary>Method &amp; limitations</summary>
+                  <p>Only completed tickets with a full 30-day observation window enter the rate. A repeat requires matching customer, product, issue, and reliable order evidence.</p>
+                  <p>Vague wording, issue progression, and ambiguous order links are excluded, so the estimate is a conservative lower bound. The reviewed sample supports precision, not recall. The pilot target is a management goal, not a forecast.</p>
+                </details>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="leaderboard" aria-labelledby="leaderboard-title">
+          <div class="page-heading compact-heading leaderboard-heading">
+            <div>
+              <p class="eyebrow">Weekly throughput</p>
+              <h1 id="leaderboard-title">Agent leaderboard</h1>
+              <p class="subtitle">Ticket volume is an operational signal. It is not a measure of agent quality.</p>
+            </div>
+            <label class="week-control">Week starting
+              <select id="leaderboard-week-select" aria-label="Choose leaderboard week"></select>
+            </label>
+          </div>
+
+          <article class="panel leaderboard-panel">
+            <div class="leaderboard-note">
+              <span id="leaderboard-summary"></span>
+              <span>Counts include every support team and represent volume only.</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Rank</th><th>Agent</th><th>Team &middot; site</th><th class="numeric">Tickets closed</th></tr></thead>
+                <tbody id="leaderboard-body"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

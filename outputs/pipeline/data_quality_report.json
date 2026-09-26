@@ -1,0 +1,92 @@
+{
+  "counts": {
+    "input_rows": {
+      "tickets": 12528,
+      "agents": 44,
+      "customers": 9500,
+      "orders": 15000,
+      "products": 14
+    },
+    "duplicate_ticket_ids": 653,
+    "duplicate_rows_removed": 653,
+    "clean_ticket_rows": 11875,
+    "completed_tickets": 11266,
+    "resolved_tickets": 10159,
+    "auto_closed_tickets": 1107,
+    "repeat_observation_eligible_tickets": 10485,
+    "legacy_resolution_timestamps_corrected": 2937,
+    "order_match_status": {
+      "explicit_future_order": 240,
+      "explicit_valid": 7800,
+      "fallback_ambiguous": 449,
+      "fallback_none": 95,
+      "fallback_unique": 3291
+    },
+    "weekly_ticket_metric_rows": 81,
+    "weekly_agent_metric_rows": 3074,
+    "observation_boundary_ist": "2026-07-01T00:00+05:30",
+    "created_support_capacity_inr": 3248430
+  },
+  "warnings": [
+    {
+      "code": "duplicate_ticket_reimport",
+      "count": 653,
+      "detail": "Duplicate ticket ID appears to be a cross-system re-import.",
+      "examples": [
+        "TK-240001",
+        "TK-240005",
+        "TK-240013",
+        "TK-240014",
+        "TK-240023",
+        "TK-240028",
+        "TK-240030",
+        "TK-240045"
+      ]
+    },
+    {
+      "code": "order_explicit_future_order",
+      "count": 240,
+      "detail": "Ticket order could not be linked unambiguously; matched_order_id is blank.",
+      "examples": [
+        "TK-240054",
+        "TK-240064",
+        "TK-240150",
+        "TK-240185",
+        "TK-240299",
+        "TK-240424",
+        "TK-240529",
+        "TK-240670"
+      ]
+    },
+    {
+      "code": "order_fallback_ambiguous",
+      "count": 449,
+      "detail": "Ticket order could not be linked unambiguously; matched_order_id is blank.",
+      "examples": [
+        "TK-240287",
+        "TK-240455",
+        "TK-240462",
+        "TK-240482",
+        "TK-240523",
+        "TK-240545",
+        "TK-240594",
+        "TK-240610"
+      ]
+    },
+    {
+      "code": "order_fallback_none",
+      "count": 95,
+      "detail": "Ticket order could not be linked unambiguously; matched_order_id is blank.",
+      "examples": [
+        "TK-240120",
+        "TK-240322",
+        "TK-240387",
+        "TK-240473",
+        "TK-240477",
+        "TK-240509",
+        "TK-240588",
+        "TK-240839"
+      ]
+    }
+  ]
+}

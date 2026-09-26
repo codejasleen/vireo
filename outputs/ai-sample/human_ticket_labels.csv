@@ -1,0 +1,36 @@
+ticket_id,customer_message,model_issue_category,model_confidence,model_evidence,human_issue_category,human_notes
+TK-240422,"dear team, strata 3 purchased a month ago, order vr890151. the courier marked it delivered but nobody in my house got anything. need this sorted this week.",missing_delivery_tracking,0.9,"ago, order [order_id]. the courier marked it delivered but nobody in my house got anything. need thi",,
+TK-251607,"Product: the strata 3
+Order: VR891708
+Purchased: 28/02
+Issue: a hiss that wasn't there when I bought it
+Tried: tried different apps
+Expected: fix",audio_distortion,0.9,rder_id] purchased: 28/02 issue: a hiss that wasn't there when i bought it,,
+TK-244075,received damaged product,other,0.35,received damaged product,,
+TK-249338,"HELLO
+I HAVEN'T RECEIVED MY ORDER
+PLS REPLY",missing_delivery_tracking,0.9,hello i haven't received my order pls reply,,
+TK-240178,"Hello, Bought the Orbit smart speaker around January 11 from Amazon.  Order not delivered, tracking not updating. I called the courier. Pathetic experience honestly. Please advise. Awaiting response, Aarav Sethi",missing_delivery_tracking,0.9,"ound january 11 from amazon. order not delivered, tracking not updating. i called t",,
+TK-252752,"Dear Sir/Madam,
+
+I am writing w/ reference to my order of Orbit Mini (VR904882) placed on December 29. The progress bar has not moved since morning. I have kept phone nearby. I request you to look into this matter at the earliest.
+
+Regards,
+Rajat Chatterjee
+Mumbai",firmware_update_failure,0.9,er_id]) placed on december 29. the progress bar has not moved since morning. i have kept phone n,,
+TK-252547,"change of mind, pls stop teh shipment, vr882078, i want my money bck",order_cancellation,0.9,"change of mind, pls stop teh shipment, [order_id]",,
+TK-241790,"hi,
+strata 3 purchased 3 weeks back, order vr908611.  chnge of mind, please stpo the shipment.
+i tried cancel button, geryed out.
+i am loing patience.
+plese advise.
+rgds varun",other,0.35,"hi, strata 3 purchased 3 weeks back, order [order_id]. chnge of mind, please stpo the shipment. i tried cancel button, g",,
+TK-243344,"To the Vireo Customer Care Team,
+
+I am writing with reference to my order of 65W charger placed on 19/07. My order has not been delivered yet. I have checked the tracking page daily. I request you to provide a resolution within 3 working days.
+
+Regards,
+Komal Trivedi",missing_delivery_tracking,0.9,rger placed on 19/07. my order has not been delivered yet. i have checked the tracking p,,
+TK-252757,[IVR transcript] honestly regretting this purchase. ordered orbit mini 2 weeks ago. connection drops constantly. i already reset both devices. refund. now,bluetooth_dropouts,0.9,e. ordered orbit mini 2 weeks ago. connection drops constantly. i already reset both d,,
+TK-246517,"Not what I expected from Vireo. Order VR888743 (the Pulse 2 earbuds). my son ordered this without asking, please reverse. I already tried cancel button, greyed out. I wnt a replacement or refund, nothing else",other,0.35,"not what i expected from vireo. order [order_id] (the pulse 2 earbuds). my son ordered this without asking, please rever",,
+TK-246518,box was crushed & the my Pulse is cracked.  kindly look into it,transit_damage,0.9,box was crushed & the my pulse is cracked. kindly,,
