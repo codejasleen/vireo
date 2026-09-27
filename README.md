@@ -44,6 +44,10 @@ The dashboard is a static site under `dashboard/` and reads only saved local dat
 - a weekly agent leaderboard covering all support teams, explicitly presented as ticket volume rather than agent quality; and
 - Support Opportunities showing the 14.34% delivery baseline, 10.76% pilot target, expected capacity impact, top repeat issues, recommended intervention, and concise validation limits.
 
+## Dashboard View
+
+<img width="949" height="504" alt="image" src="https://github.com/user-attachments/assets/fc906cb2-fd6f-4132-ba2e-f13236d6adc0" />
+
 ## Analytical decisions and limits
 
 - Duplicate ticket IDs prefer the helpdesk record over the migrated legacy record. Conflicts remain in the quality report.
